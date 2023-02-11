@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/">
+        <link rel="next" href="../%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AE%A1%E7%90%86/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>ファイルパーミッション - LinuC Lv1 Notes</title>
+        <title>デバイス - LinuC Lv1 Notes</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#wip" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ファイルパーミッション
+              デバイス
             
           </span>
         </div>
@@ -199,11 +199,197 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          デバイス
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         デバイス
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wip" class="md-nav__link">
+    デバイス(wip)
+  </a>
+  
+    <nav class="md-nav" aria-label="デバイス(wip)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    プラグデバイス
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグデバイス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    コールドプラグデバイス
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ホットプラグデバイス
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    デバイスファイル
+  </a>
+  
+    <nav class="md-nav" aria-label="デバイスファイル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d-bus" class="md-nav__link">
+    D-bus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    ブロックデバイスとキャラクタデバイス
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#udev" class="md-nav__link">
+    udev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    /dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proc" class="md-nav__link">
+    /proc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dma" class="md-nav__link">
+    DMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    USBデバイス
+  </a>
+  
+    <nav class="md-nav" aria-label="USBデバイス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    デバイスクラス
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scsi" class="md-nav__link">
+    SCSIデバイス
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    カーネルモジュール
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    マウント
+  </a>
+  
+    <nav class="md-nav" aria-label="マウント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    マウントポイント
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etcfstab" class="md-nav__link">
+    /etc/fstab
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -259,177 +445,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          ファイルパーミッション
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%91%E3%83%BC%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/" class="md-nav__link">
         ファイルパーミッション
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    ファイルパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="ファイルパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    通常ファイルとスペシャルファイル
-  </a>
-  
-    <nav class="md-nav" aria-label="通常ファイルとスペシャルファイル">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    通常ファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    スペシャルファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    ファイル種別の表記
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    権限の制御単位
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rwx" class="md-nav__link">
-    RWXパーミッション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    パーミッションに応じてできる事
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    パーミッションの表示
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    デフォルトパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="デフォルトパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mask" class="md-nav__link">
-    mask値
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    特殊なパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="特殊なパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#suidset-user-id" class="md-nav__link">
-    SUID:Set User ID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sgidset-group-id" class="md-nav__link">
-    SGID:Set Group ID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stickey-bit" class="md-nav__link">
-    Stickey bit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    パーミッション管理コマンド
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -489,38 +509,31 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    ファイルパーミッション
+  <a href="#wip" class="md-nav__link">
+    デバイス(wip)
   </a>
   
-    <nav class="md-nav" aria-label="ファイルパーミッション">
+    <nav class="md-nav" aria-label="デバイス(wip)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    プラグデバイス
+  </a>
+  
+    <nav class="md-nav" aria-label="プラグデバイス">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    通常ファイルとスペシャルファイル
+    コールドプラグデバイス
   </a>
   
-    <nav class="md-nav" aria-label="通常ファイルとスペシャルファイル">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    通常ファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    スペシャルファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    ファイル種別の表記
+    ホットプラグデバイス
   </a>
   
 </li>
@@ -531,90 +544,117 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    権限の制御単位
+  <a href="#_4" class="md-nav__link">
+    デバイスファイル
+  </a>
+  
+    <nav class="md-nav" aria-label="デバイスファイル">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#d-bus" class="md-nav__link">
+    D-bus
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    ブロックデバイスとキャラクタデバイス
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#rwx" class="md-nav__link">
-    RWXパーミッション
+  <a href="#udev" class="md-nav__link">
+    udev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dev" class="md-nav__link">
+    /dev
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#proc" class="md-nav__link">
+    /proc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dma" class="md-nav__link">
+    DMA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usb" class="md-nav__link">
+    USBデバイス
+  </a>
+  
+    <nav class="md-nav" aria-label="USBデバイス">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    デバイスクラス
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scsi" class="md-nav__link">
+    SCSIデバイス
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
-    パーミッションに応じてできる事
+    カーネルモジュール
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    パーミッションの表示
-  </a>
+      </ul>
+    </nav>
   
 </li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    マウント
+  </a>
+  
+    <nav class="md-nav" aria-label="マウント">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
-    デフォルトパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="デフォルトパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mask" class="md-nav__link">
-    mask値
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    特殊なパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="特殊なパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#suidset-user-id" class="md-nav__link">
-    SUID:Set User ID
+    マウントポイント
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#sgidset-group-id" class="md-nav__link">
-    SGID:Set Group ID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stickey-bit" class="md-nav__link">
-    Stickey bit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    パーミッション管理コマンド
+  <a href="#etcfstab" class="md-nav__link">
+    /etc/fstab
   </a>
   
 </li>
@@ -640,156 +680,196 @@
 
 
 
-  <h1>ファイルパーミッション</h1>
+  <h1>デバイス</h1>
 
-<h2 id="_1">ファイルパーミッション</h2>
-<p>ファイルパーミッションとは、ファイルへのアクセス権限の事。すべてのファイル(ディレクトリ含む)はパーミッションを持ち、パーミッションが割り当てられないユーザはファイルへアクセスできない。</p>
-<h3 id="_2">通常ファイルとスペシャルファイル</h3>
-<p>Linuxではファイルは大きく分けて<strong>通常ファイル</strong>と<strong>スペシャルファイル</strong>の2種類がある。</p>
-<h4 id="_3">通常ファイル</h4>
-<p><code>.txt</code>などのようなファイル、ディレクトリ、リンクファイル、ハードリンク、シンボリックリンク、ソフトリンク、実行ファイル。</p>
-<h4 id="_4">スペシャルファイル</h4>
-<p>デバイスファイル、パイプ、ソケット。</p>
-<h4 id="_5">ファイル種別の表記</h4>
-<p>ls -lを実行した時の行頭でファイルの種類が分かる。</p>
-<table>
-<thead>
-<tr>
-<th>表示</th>
-<th>ファイルの種別</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-</td>
-<td>ファイル</td>
-</tr>
-<tr>
-<td>d</td>
-<td>ディレクトリ</td>
-</tr>
-<tr>
-<td>l</td>
-<td>リンク</td>
-</tr>
-<tr>
-<td>p</td>
-<td>パイプファイル</td>
-</tr>
-<tr>
-<td>b</td>
-<td>ブロックデバイス</td>
-</tr>
-<tr>
-<td>c</td>
-<td>キャラクタデバイス</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_6">権限の制御単位</h3>
-<p>パーミッションは3つの範囲で制御できるように分けられており、それぞれの範囲ごとに権限を設定できる。</p>
+<h2 id="wip">デバイス(wip)</h2>
+<h3 id="_1">プラグデバイス</h3>
+<p>周辺機器(デバイス)にはコールドプラグデバイスとホットプラグデバイスの2つがある。</p>
+<h4 id="_2">コールドプラグデバイス</h4>
 <ul>
-<li>ファイルの所有者であるユーザー (ユーザーパーミッション)</li>
-<li>所有権を持つグループ (グループパーミッション)</li>
-<li>システム上のその他すべてのユーザー (所有権を持つグループのユーザーやメンバー以外) (その他のパーミッション)</li>
+<li>システムが停止している状態でのみデバイスの差し替えができるデバイスのこと。</li>
+<li>システムは起動時にデバイスを認識する。</li>
+<li>コールドプラグデバイスにはRAIDカードなどがある。</li>
 </ul>
-<h3 id="rwx">RWXパーミッション</h3>
-<p>すべてのファイルには<code>読み取り(Read)</code>、<code>書き込み(Write)</code>、<code>実行可能(Execute)</code>の3つのカテゴリのパーミッションが用意されている。また、それぞれの属性には数字が割り当てられており、パーミッション属性変更コマンドchmodでその数字を指定して実行できる。</p>
-<h3 id="_7">パーミッションに応じてできる事</h3>
+<h4 id="_3">ホットプラグデバイス</h4>
+<ul>
+<li>システムが起動している状態でもデバイスの差し替えができるデバイスのこと。</li>
+<li>これらはプラグアンドプレイ(pnp)デバイスとも呼ばれる。</li>
+<li>ホットプラグデバイスにはUSBがある。</li>
+<li>ホットプラグデバイスの制御はudev(Userspace DEVice management)によって行われる。</li>
+</ul>
+<h3 id="_4">デバイスファイル</h3>
+<p>Linuxでは接続されたデバイスをファイルの1つとして扱う。これをデバイスファイルという。
+デバイスファイルは「/dev」ディレクトリ配下に配置される。</p>
+<h4 id="d-bus">D-bus</h4>
+<ul>
+<li>D-Bus（Desktop Bus）は、プログラム同士が情報を伝達するプロセス間通信機構のひとつ。</li>
+<li>Linuxではdbus-daemonなどがプロセス間通信の中継を行う。この機能により、例えば新しいデバイスの認識情報を他のアプリケーションに伝達し、そのアプリケーションが新しいデバイスをすぐに使えるようになるなどのシステム管理上の利便性も向上する。</li>
+</ul>
+<h3 id="_5">ブロックデバイスとキャラクタデバイス</h3>
+<ul>
+<li>デバイスにアクセスする際に、データの入出力をブロック単位で行うデバイスをブロックデバイス、バイト単位で行うデバイスをキャラクタデバイスという。</li>
+<li>ブロックデバイスはHDDなどの光学ドライブやストレージデバイス。</li>
+<li>キャラクタデバイスはマウスやキーボードなどのデバイス。</li>
+<li>/dev配下のデバイスファイルのファイル種別がbとなっているものがブロックデバイス、cとなっているものがキャラクタデバイス。</li>
+</ul>
+<h3 id="udev">udev</h3>
+<ul>
+<li>Linuxカーネル用のデバイス管理ツール。デーモンの1つ。</li>
+<li>
+<p><strong>udev:Userspace DEVice management</strong>はデバイスの接続を検知(カーネルから通知される)した際、デバイスファイルを動的に作成する。</p>
+</li>
+<li>
+<p>カーネルはデバイスを検知すると「/sys」以下（sysfsと呼ばれます）の情報を更新しますが、その更新をudevは検知し、/dev以下にデバイスファイルを動的に作成する。</p>
+</li>
+<li>
+<p>デバイスファイル作成時の動作は、「/etc/udev/rules.d」ディレクトリに配置された設定ファイル（拡張子「.rules」）に記述された情報に基づいて行われる。
+<code>/etc/udev/rules.d/*.rules</code></p>
+</li>
+</ul>
+<h3 id="dev">/dev</h3>
+<ul>
+<li>ハードウェアへのアクセスを抽象化したファイル「デバイスファイル」が格納されているディレクトリ。</li>
+<li>デバイスファイルの読み書きを通してハードウェアにアクセスできる。</li>
+</ul>
+<h3 id="proc">/proc</h3>
+<ul>
+<li>「/proc」ディレクトリはプロセス、ハードウェアおよびシステムリソースなどの情報を扱うための擬似的なファイルシステム。そのため、ハードディスク上にファイルは存在せず、システムが起動する際にメモリ上に作成される。</li>
+<li>「/proc」ディレクトリ配下のファイルはメモリ上に作成される仮想的なファイルなので、ほとんどのファイルはサイズは0（ゼロ）、ファイルの種類はempty（空）と表示される。</li>
+<li>「/proc/kcore」ファイルはファイルサイズとしてシステムのメモリ容量が表示される。</li>
+<li>/procディレクトリのファイルは絶対にviで開いてはいけないので開くときはcatなどで参照する。</li>
+</ul>
 <table>
 <thead>
 <tr>
-<th>パーミッション</th>
-<th>ファイル</th>
-<th>ディレクトリ</th>
+<th>ファイル名</th>
+<th>説明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>R</td>
-<td>ファイルの内容を参照</td>
-<td>ディレクトリ内の内容を参照</td>
+<td>interrupts</td>
+<td>IRQに関する情報</td>
 </tr>
 <tr>
-<td>W</td>
-<td>ファイルの書き込み</td>
-<td>ディレクトリ内に新規ファイル作成<br>既存ファイルの名前変更と削除</td>
+<td>ioports</td>
+<td>I/Oアドレスの情報</td>
 </tr>
 <tr>
-<td>X</td>
-<td>ファイルの実行</td>
-<td>ディレクトリ内へのアクセス<br>ディレクトリへの移動</td>
+<td>bus/pci/devices</td>
+<td>PCIデバイスに関する情報</td>
+</tr>
+<tr>
+<td>bus/usb/devices</td>
+<td>USBデバイスに関する情報</td>
+</tr>
+<tr>
+<td>meminfo</td>
+<td>メモリに関する情報</td>
+</tr>
+<tr>
+<td>cpuinfo</td>
+<td>CPUに関する情報</td>
+</tr>
+<tr>
+<td>dma</td>
+<td>使用中のDMAチャネルに関する情報</td>
+</tr>
+<tr>
+<td>modules</td>
+<td>ロードされているカーネルモジュールに関する情報</td>
+</tr>
+<tr>
+<td>scsi/scsi</td>
+<td>SCSIデバイスに関する情報</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_8">パーミッションの表示</h3>
-<p><code>ls -l</code>コマンドを実行すると以下のように、スペースで区切られた10桁の英字が表示される。このうち先頭を除いた9桁がパーミッションの表示。</p>
-<p><code>d rwx rwx r--</code></p>
-<p>先頭(この場合はd)はファイルの種別を現し、残り9桁は3桁毎に解釈される。</p>
-<p>最初の3桁は所有者のパーミッション、次の3桁は所有グループのパーミッション、最後の3桁はその他のユーザーのパーミッションを意味する。</p>
+<h3 id="dma">DMA</h3>
+<p>DMAとは、CPUを介することなくメインメモリと周辺機器の間で直接的に情報転送を行う方式です。
+DMAチャネルは周辺機器がDMAのコントローラ（制御装置）に対して情報転送を要求するために使用する通信経路の事です。</p>
+<h3 id="usb">USBデバイス</h3>
+<p>「/proc/bus/usb/devices」には接続されたUSBデバイスの情報が格納されている。</p>
+<h4 id="_6">デバイスクラス</h4>
+<p>USBデバイスはデバイスクラスがあり、それぞれ以下のデバイスクラスとして認識される。</p>
 <table>
 <thead>
 <tr>
-<th>ファイル種別</th>
-<th>所有者</th>
-<th>所有グループ</th>
-<th>その他</th>
+<th>USBデバイス</th>
+<th>デバイスクラス</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>d</td>
-<td>rwx</td>
-<td>rwx</td>
-<td>rwx</td>
+<td>HDD,USBメモリー</td>
+<td>Mass Storage Class</td>
+</tr>
+<tr>
+<td>キーボード、マウス</td>
+<td>HIDデバイス</td>
+</tr>
+<tr>
+<td>スピーカー、マイク</td>
+<td>Audio Class</td>
+</tr>
+<tr>
+<td>モデム、TA</td>
+<td>ACM Communication Device Class</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_9">デフォルトパーミッション</h3>
-<p>ファイル・ディレクトリを新規作成するとき、それぞれのパーミッションはファイルが666、ディレクトリが777になっている。</p>
-<h4 id="mask">mask値</h4>
-<p>rootの場合は<code>0022</code>、一般ユーザの場合は<code>0002</code>が設定されており、新しくファイル・ディレクトリを作成する場合にこの値をもとにファイルのパーミッションが決められる。mask値は<code>/etc/bashrc</code>で設定されている。</p>
-<h3 id="_10">特殊なパーミッション</h3>
-<p>パーミッションにはRWXパーミッションの他に、特殊なパーミッションが存在する。</p>
-<h4 id="suidset-user-id">SUID:Set User ID</h4>
-<p>誰がそのファイルを実行しても、セットされたユーザで実行されるという状態。
-SUIDを設定すると、所有者のxパーミッションの表示がsに変更される。もともと実行権限を所有していなかった場合は大文字のSになる。chmodコマンドで4000を追加する</p>
-<p>passwd,wallコマンドなどで使われる。</p>
-<h4 id="sgidset-group-id">SGID:Set Group ID</h4>
-<p>誰がそのファイルを実行しても、セットされたグループで実行されるという状態。
-ディレクトリにSGIDを指定しておくと、ディレクトリ内部で作成されたファイルは全てディレクトリのSGIDで指定したグループが割り振られる。グループのxパーミッションの表示がsに変更される。もともと実行権限を所有していなかった場合は大文字のSになる。
-chmodコマンドで2000を追加する。</p>
-<h4 id="stickey-bit">Stickey bit</h4>
-<p>ディレクトリに設定される特殊なパーミッション。すべてのユーザが書き込みができるが、所有者かroot以外削除ができない。
-<code>他のユーザ</code>の実行権限がtになる。もともと実行権限を所有していなかった場合は大文字のTになる。
-chmodコマンドで1000を付ける。主に<code>/tmp</code>ディレクトリに使用されている。</p>
-<h3 id="_11">パーミッション管理コマンド</h3>
+<h3 id="scsi">SCSIデバイス</h3>
+<p>SCSIデバイスに関する情報は「/proc/scsi/scsi」ファイルで確認できる。</p>
+<h3 id="_7">カーネルモジュール</h3>
+<ul>
+<li>カーネルモジュールとは、カーネルで扱うべき色々な機能を独立した部品のようなもの。</li>
+<li>モジュールとしてカーネルから切り離すことでカーネル本体のサイズを小さくし、必要な機能だけをロードしたり、不要な機能はアンロードするというように使用できる。</li>
+</ul>
+<h2 id="_8">マウント</h2>
+<p>Linuxのディレクトリ構造は、「/（ルートディレクトリ）」とよばれる一番上のディレクトリからはじまるツリー状の構造になっていますが、増設したハードディスクの様な記憶装置を、このツリー構造のあるポイントへ登録する事をマウントといいます。</p>
+<h3 id="_9">マウントポイント</h3>
+<p>「あるポイント」の事をマウントポイントという。マウント前にマウントポイントというディレクトリを作成します。</p>
+<h3 id="etcfstab">/etc/fstab</h3>
+<p>OSを再起動するとマウントは外れてしまうが、fstabにマウント情報を記載しておくと、再起動時に自動で再マウントを行う。</p>
 <table>
 <thead>
 <tr>
+<th>フィールド</th>
 <th>内容</th>
-<th>コマンド</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>ファイル・ディレクトリのパーミッションを変更する。</td>
-<td><code>chmod</code></td>
+<td>第1フィールド</td>
+<td>デバイス名</td>
 </tr>
 <tr>
-<td>ファイル・ディレクトリの所有者を変更する</td>
-<td><code>chown</code></td>
+<td>第2フィールド</td>
+<td>マウントポイント</td>
 </tr>
 <tr>
-<td>ファイル・ディレクトリの所有グループを変更する</td>
-<td><code>chgrp</code></td>
+<td>第3フィールド</td>
+<td>ファイルシステムの種類</td>
 </tr>
 <tr>
-<td>ファイル・ディレクトリを作成する際のmask値を変更する</td>
-<td><code>umask</code></td>
+<td>第4フィールド</td>
+<td>各種オプション</td>
+</tr>
+<tr>
+<td>第5フィールド</td>
+<td>ファイルシステムをdumpするか否かの指定</td>
+</tr>
+<tr>
+<td>第6フィールド</td>
+<td>OS起動時にfsckチェックを行うか否かの指定を行う</td>
 </tr>
 </tbody>
 </table>
+<ul>
+<li>fstabに記載したがマウントされていない状態の場合は、<code>mount -a</code>でfstabの内容が反映される。</li>
+<li>マウントしたデバイスは通常root権限でマウントされるため、一般ユーザは嫁はするが書き込みができない。</li>
+<li>マウントオプションにユーザを指定すると一般ユーザもマウントできる。</li>
+</ul>
 
 
 

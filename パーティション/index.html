@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/">
+        <link rel="prev" href="../%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AE%A1%E7%90%86/">
       
       
-        <link rel="next" href="../%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/">
+        <link rel="next" href="../%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>ファイルパーミッション - LinuC Lv1 Notes</title>
+        <title>パーティション - LinuC Lv1 Notes</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#wip" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ファイルパーミッション
+              パーティション
             
           </span>
         </div>
@@ -229,11 +229,143 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          パーティション
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         パーティション
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#wip" class="md-nav__link">
+    パーティション(wip)
+  </a>
+  
+    <nav class="md-nav" aria-label="パーティション(wip)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ブートからシステム起動の流れ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biosuefi" class="md-nav__link">
+    BIOSとUEFI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mbrgpt" class="md-nav__link">
+    MBRとGPT
+  </a>
+  
+    <nav class="md-nav" aria-label="MBRとGPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mrb" class="md-nav__link">
+    MRBパーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt" class="md-nav__link">
+    GPTパーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    スワップパーティション
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lvmlogical-volume-manager" class="md-nav__link">
+    LVM:Logical Volume Manager(論理ボリュームマネージャ)
+  </a>
+  
+    <nav class="md-nav" aria-label="LVM:Logical Volume Manager(論理ボリュームマネージャ)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pvphysical-volume" class="md-nav__link">
+    PV:Physical Volume(物理ボリューム)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vgvolume-group" class="md-nav__link">
+    VG:Volume Group(ボリュームグループ)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lvlogical-volume" class="md-nav__link">
+    LV:Logical Volume(論理ボリューム)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -259,177 +391,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          ファイルパーミッション
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%91%E3%83%BC%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/" class="md-nav__link">
         ファイルパーミッション
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    ファイルパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="ファイルパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    通常ファイルとスペシャルファイル
-  </a>
-  
-    <nav class="md-nav" aria-label="通常ファイルとスペシャルファイル">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    通常ファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    スペシャルファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    ファイル種別の表記
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    権限の制御単位
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rwx" class="md-nav__link">
-    RWXパーミッション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    パーミッションに応じてできる事
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    パーミッションの表示
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    デフォルトパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="デフォルトパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mask" class="md-nav__link">
-    mask値
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    特殊なパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="特殊なパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#suidset-user-id" class="md-nav__link">
-    SUID:Set User ID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sgidset-group-id" class="md-nav__link">
-    SGID:Set Group ID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stickey-bit" class="md-nav__link">
-    Stickey bit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    パーミッション管理コマンド
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -489,38 +455,59 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    ファイルパーミッション
+  <a href="#wip" class="md-nav__link">
+    パーティション(wip)
   </a>
   
-    <nav class="md-nav" aria-label="ファイルパーミッション">
+    <nav class="md-nav" aria-label="パーティション(wip)">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ブートからシステム起動の流れ
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#biosuefi" class="md-nav__link">
+    BIOSとUEFI
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mbrgpt" class="md-nav__link">
+    MBRとGPT
+  </a>
+  
+    <nav class="md-nav" aria-label="MBRとGPT">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mrb" class="md-nav__link">
+    MRBパーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpt" class="md-nav__link">
+    GPTパーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linux" class="md-nav__link">
+    Linux
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    通常ファイルとスペシャルファイル
-  </a>
-  
-    <nav class="md-nav" aria-label="通常ファイルとスペシャルファイル">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    通常ファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    スペシャルファイル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    ファイル種別の表記
+    スワップパーティション
   </a>
   
 </li>
@@ -531,91 +518,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    権限の制御単位
+  <a href="#lvmlogical-volume-manager" class="md-nav__link">
+    LVM:Logical Volume Manager(論理ボリュームマネージャ)
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rwx" class="md-nav__link">
-    RWXパーミッション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    パーミッションに応じてできる事
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    パーミッションの表示
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_9" class="md-nav__link">
-    デフォルトパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="デフォルトパーミッション">
+    <nav class="md-nav" aria-label="LVM:Logical Volume Manager(論理ボリュームマネージャ)">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mask" class="md-nav__link">
-    mask値
+  <a href="#pvphysical-volume" class="md-nav__link">
+    PV:Physical Volume(物理ボリューム)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vgvolume-group" class="md-nav__link">
+    VG:Volume Group(ボリュームグループ)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lvlogical-volume" class="md-nav__link">
+    LV:Logical Volume(論理ボリューム)
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_10" class="md-nav__link">
-    特殊なパーミッション
-  </a>
-  
-    <nav class="md-nav" aria-label="特殊なパーミッション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#suidset-user-id" class="md-nav__link">
-    SUID:Set User ID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sgidset-group-id" class="md-nav__link">
-    SGID:Set Group ID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#stickey-bit" class="md-nav__link">
-    Stickey bit
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_11" class="md-nav__link">
-    パーミッション管理コマンド
-  </a>
   
 </li>
         
@@ -640,156 +572,74 @@
 
 
 
-  <h1>ファイルパーミッション</h1>
+  <h1>パーティション</h1>
 
-<h2 id="_1">ファイルパーミッション</h2>
-<p>ファイルパーミッションとは、ファイルへのアクセス権限の事。すべてのファイル(ディレクトリ含む)はパーミッションを持ち、パーミッションが割り当てられないユーザはファイルへアクセスできない。</p>
-<h3 id="_2">通常ファイルとスペシャルファイル</h3>
-<p>Linuxではファイルは大きく分けて<strong>通常ファイル</strong>と<strong>スペシャルファイル</strong>の2種類がある。</p>
-<h4 id="_3">通常ファイル</h4>
-<p><code>.txt</code>などのようなファイル、ディレクトリ、リンクファイル、ハードリンク、シンボリックリンク、ソフトリンク、実行ファイル。</p>
-<h4 id="_4">スペシャルファイル</h4>
-<p>デバイスファイル、パイプ、ソケット。</p>
-<h4 id="_5">ファイル種別の表記</h4>
-<p>ls -lを実行した時の行頭でファイルの種類が分かる。</p>
+<h2 id="wip">パーティション(wip)</h2>
+<h4 id="_1">ブートからシステム起動の流れ</h4>
 <table>
 <thead>
 <tr>
-<th>表示</th>
-<th>ファイルの種別</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>-</td>
-<td>ファイル</td>
+<td>電源ON</td>
 </tr>
 <tr>
-<td>d</td>
-<td>ディレクトリ</td>
+<td>BIOS/UEFI起動</td>
 </tr>
 <tr>
-<td>l</td>
-<td>リンク</td>
+<td>ブートローダ起動</td>
 </tr>
 <tr>
-<td>p</td>
-<td>パイプファイル</td>
+<td>カーネル起動</td>
 </tr>
 <tr>
-<td>b</td>
-<td>ブロックデバイス</td>
+<td>intramgs起動</td>
 </tr>
 <tr>
-<td>c</td>
-<td>キャラクタデバイス</td>
+<td>systemd起動</td>
+</tr>
+<tr>
+<td>システム起動完了</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_6">権限の制御単位</h3>
-<p>パーミッションは3つの範囲で制御できるように分けられており、それぞれの範囲ごとに権限を設定できる。</p>
-<ul>
-<li>ファイルの所有者であるユーザー (ユーザーパーミッション)</li>
-<li>所有権を持つグループ (グループパーミッション)</li>
-<li>システム上のその他すべてのユーザー (所有権を持つグループのユーザーやメンバー以外) (その他のパーミッション)</li>
-</ul>
-<h3 id="rwx">RWXパーミッション</h3>
-<p>すべてのファイルには<code>読み取り(Read)</code>、<code>書き込み(Write)</code>、<code>実行可能(Execute)</code>の3つのカテゴリのパーミッションが用意されている。また、それぞれの属性には数字が割り当てられており、パーミッション属性変更コマンドchmodでその数字を指定して実行できる。</p>
-<h3 id="_7">パーミッションに応じてできる事</h3>
-<table>
-<thead>
-<tr>
-<th>パーミッション</th>
-<th>ファイル</th>
-<th>ディレクトリ</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>R</td>
-<td>ファイルの内容を参照</td>
-<td>ディレクトリ内の内容を参照</td>
-</tr>
-<tr>
-<td>W</td>
-<td>ファイルの書き込み</td>
-<td>ディレクトリ内に新規ファイル作成<br>既存ファイルの名前変更と削除</td>
-</tr>
-<tr>
-<td>X</td>
-<td>ファイルの実行</td>
-<td>ディレクトリ内へのアクセス<br>ディレクトリへの移動</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_8">パーミッションの表示</h3>
-<p><code>ls -l</code>コマンドを実行すると以下のように、スペースで区切られた10桁の英字が表示される。このうち先頭を除いた9桁がパーミッションの表示。</p>
-<p><code>d rwx rwx r--</code></p>
-<p>先頭(この場合はd)はファイルの種別を現し、残り9桁は3桁毎に解釈される。</p>
-<p>最初の3桁は所有者のパーミッション、次の3桁は所有グループのパーミッション、最後の3桁はその他のユーザーのパーミッションを意味する。</p>
-<table>
-<thead>
-<tr>
-<th>ファイル種別</th>
-<th>所有者</th>
-<th>所有グループ</th>
-<th>その他</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>d</td>
-<td>rwx</td>
-<td>rwx</td>
-<td>rwx</td>
-</tr>
-</tbody>
-</table>
-<h3 id="_9">デフォルトパーミッション</h3>
-<p>ファイル・ディレクトリを新規作成するとき、それぞれのパーミッションはファイルが666、ディレクトリが777になっている。</p>
-<h4 id="mask">mask値</h4>
-<p>rootの場合は<code>0022</code>、一般ユーザの場合は<code>0002</code>が設定されており、新しくファイル・ディレクトリを作成する場合にこの値をもとにファイルのパーミッションが決められる。mask値は<code>/etc/bashrc</code>で設定されている。</p>
-<h3 id="_10">特殊なパーミッション</h3>
-<p>パーミッションにはRWXパーミッションの他に、特殊なパーミッションが存在する。</p>
-<h4 id="suidset-user-id">SUID:Set User ID</h4>
-<p>誰がそのファイルを実行しても、セットされたユーザで実行されるという状態。
-SUIDを設定すると、所有者のxパーミッションの表示がsに変更される。もともと実行権限を所有していなかった場合は大文字のSになる。chmodコマンドで4000を追加する</p>
-<p>passwd,wallコマンドなどで使われる。</p>
-<h4 id="sgidset-group-id">SGID:Set Group ID</h4>
-<p>誰がそのファイルを実行しても、セットされたグループで実行されるという状態。
-ディレクトリにSGIDを指定しておくと、ディレクトリ内部で作成されたファイルは全てディレクトリのSGIDで指定したグループが割り振られる。グループのxパーミッションの表示がsに変更される。もともと実行権限を所有していなかった場合は大文字のSになる。
-chmodコマンドで2000を追加する。</p>
-<h4 id="stickey-bit">Stickey bit</h4>
-<p>ディレクトリに設定される特殊なパーミッション。すべてのユーザが書き込みができるが、所有者かroot以外削除ができない。
-<code>他のユーザ</code>の実行権限がtになる。もともと実行権限を所有していなかった場合は大文字のTになる。
-chmodコマンドで1000を付ける。主に<code>/tmp</code>ディレクトリに使用されている。</p>
-<h3 id="_11">パーミッション管理コマンド</h3>
-<table>
-<thead>
-<tr>
-<th>内容</th>
-<th>コマンド</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ファイル・ディレクトリのパーミッションを変更する。</td>
-<td><code>chmod</code></td>
-</tr>
-<tr>
-<td>ファイル・ディレクトリの所有者を変更する</td>
-<td><code>chown</code></td>
-</tr>
-<tr>
-<td>ファイル・ディレクトリの所有グループを変更する</td>
-<td><code>chgrp</code></td>
-</tr>
-<tr>
-<td>ファイル・ディレクトリを作成する際のmask値を変更する</td>
-<td><code>umask</code></td>
-</tr>
-</tbody>
-</table>
+<h4 id="biosuefi">BIOSとUEFI</h4>
+<p>BIOSはMBRとGPTの両方のパーティション企画に対応しているが、UEFIはGPTのみを扱う。</p>
+<h3 id="mbrgpt">MBRとGPT</h3>
+<p>パーティション管理の仕組み。</p>
+<h4 id="mrb">MRBパーティション</h4>
+<p>ブートローダは起動デバイスの先頭にあるMRB領域に格納されている。</p>
+<h4 id="gpt">GPTパーティション</h4>
+<p>ブートローダは起動デバイスのESP(EFI System Partition)に格納されている。ESPは/boot/efiにマウントされる。</p>
+<h4 id="linux">Linux</h4>
+<p>Linuxでは障害発生時に被害の波及範囲の制限、などから、複数のパーティションに分割して運用する事が望ましい。</p>
+<h4 id="_2">スワップパーティション</h4>
+<p>メモリが不足すると、メモリの一部をスワップ領域に退避することでシステムダウンを不正で処理を継続する。</p>
+<p>ルートパーティションとスワップパーティションの2つがあればシステムは動作する。
+/boot
+/hom
+/var
+/tmp
+を個別のパーティションに分割することが一般的。</p>
+<p>ブートローダ
+GRUB Legacy
+GRUB2</p>
+<p>BIOSはMBRとGPTの両方ｎ対応
+UEFIはGPTのみを扱う</p>
+<p>マウント、
+iノード</p>
+<h3 id="lvmlogical-volume-manager">LVM:Logical Volume Manager(論理ボリュームマネージャ)</h3>
+<p>複数のディスクやパーティションにまたがった論理的なパーティションである、論理ボリュームを構成できる仕組み。拡張や縮小が容易に可能。</p>
+<h4 id="pvphysical-volume">PV:Physical Volume(物理ボリューム)</h4>
+<p>ディスクやパーティションをLVMで扱えるようにしたものを物理ボリュームという。</p>
+<h4 id="vgvolume-group">VG:Volume Group(ボリュームグループ)</h4>
+<p>物理ボリュームを束ねて塊都市、ボリュームグループを構成する。</p>
+<h4 id="lvlogical-volume">LV:Logical Volume(論理ボリューム)</h4>
+<p>VGから必要なサイズを切り出して論理的なパーティションを作成する。こうしてできたものを論理ボリュームという。
+ブートローダはLVを認識しないため、/boot(カーネルが入ってるやつ)は物理パーティション上に構成する。</p>
 
 
 
