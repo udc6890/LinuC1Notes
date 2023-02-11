@@ -9,17 +9,17 @@
       
       
       
-        <link rel="prev" href="../%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AE%A1%E7%90%86/">
+        <link rel="prev" href="..">
       
       
-        <link rel="next" href="../%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%83%91%E3%83%BC%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3/">
+        <link rel="next" href="../%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9/">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>ファイルシステム - LinuC Lv1 Notes</title>
+        <title>ブートとsystemd - LinuC Lv1 Notes</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wip" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ファイルシステム
+              ブートとsystemd
             
           </span>
         </div>
@@ -199,11 +199,61 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../%E3%83%96%E3%83%BC%E3%83%88%E3%81%A8systemd/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          ブートとsystemd
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         ブートとsystemd
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    ブート
+  </a>
+  
+    <nav class="md-nav" aria-label="ブート">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    ブートからシステム起動の流れ
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -259,117 +309,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          ファイルシステム
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/" class="md-nav__link">
         ファイルシステム
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wip" class="md-nav__link">
-    ファイルシステム(wip)
-  </a>
-  
-    <nav class="md-nav" aria-label="ファイルシステム(wip)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#vfsvirtual-file-system" class="md-nav__link">
-    VFS:Virtual File System
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#i-nodeindex-node" class="md-nav__link">
-    i-node:index-node
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fhsfilesystem-hierarcy-standard" class="md-nav__link">
-    FHS:Filesystem Hierarcy Standard
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#etcfstab" class="md-nav__link">
-    /etc/fstab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fstab" class="md-nav__link">
-    fstabの記法
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uuid" class="md-nav__link">
-    UUID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    ラベル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#media" class="md-nav__link">
-    /media
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tmpfs" class="md-nav__link">
-    tmpfs
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -444,72 +388,16 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wip" class="md-nav__link">
-    ファイルシステム(wip)
+  <a href="#_1" class="md-nav__link">
+    ブート
   </a>
   
-    <nav class="md-nav" aria-label="ファイルシステム(wip)">
+    <nav class="md-nav" aria-label="ブート">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#vfsvirtual-file-system" class="md-nav__link">
-    VFS:Virtual File System
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#i-nodeindex-node" class="md-nav__link">
-    i-node:index-node
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fhsfilesystem-hierarcy-standard" class="md-nav__link">
-    FHS:Filesystem Hierarcy Standard
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#etcfstab" class="md-nav__link">
-    /etc/fstab
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#fstab" class="md-nav__link">
-    fstabの記法
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#uuid" class="md-nav__link">
-    UUID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    ラベル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#media" class="md-nav__link">
-    /media
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#tmpfs" class="md-nav__link">
-    tmpfs
+  <a href="#_2" class="md-nav__link">
+    ブートからシステム起動の流れ
   </a>
   
 </li>
@@ -535,258 +423,20 @@
 
 
 
-  <h1>ファイルシステム</h1>
+  <h1>ブートとsystemd</h1>
 
-<h2 id="wip">ファイルシステム(wip)</h2>
-<p>ファイルシステムは、物理的な装置に保存されたデータを管理する機能。</p>
-<p>LinuxはWindowsとは違う独自のファイルシステムを使用している。
-LinuxではデフォルトでExt4がよく利用される。他にXFS,Btrfs,vfat等がある。
-ファイルシステムは、用途によって選択する。</p>
-<h4 id="vfsvirtual-file-system">VFS:Virtual File System</h4>
-<p>ファイルシステム上に構築された抽象化レイヤー。これがあることでファイルシステムが異なっていても同一の方法でアクセスが可能。</p>
-<h4 id="i-nodeindex-node">i-node:index-node</h4>
-<p>ファイルを管理するためのデータ構造体。VFSで抽象化されたデータと実データを関連付けるデータ。</p>
-<h4 id="fhsfilesystem-hierarcy-standard">FHS:Filesystem Hierarcy Standard</h4>
-<p>Linux系のシステムは主なディレクトリとその内容をどのように配置するのかを方針として定めており、これをFHSという。</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>/</td>
-<td></td>
-<td></td>
-<td></td>
-<td>ルートディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/bin</td>
-<td></td>
-<td></td>
-<td>一般ユーザが利用できるコマンドが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/boot</td>
-<td></td>
-<td></td>
-<td>LinuxカーネルやGRUBの設定ファイルなどLinuxの起動に必要なファイルが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/dev</td>
-<td></td>
-<td></td>
-<td>デバイスファイルが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/etc</td>
-<td></td>
-<td></td>
-<td>設定ファイルが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/home</td>
-<td></td>
-<td></td>
-<td>ユーザのホームディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/lib</td>
-<td></td>
-<td></td>
-<td>共有ライブラリとかカーネルモジュールが配置されるディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/media</td>
-<td></td>
-<td></td>
-<td>CDなどのマウントポイントとなるディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/mnt</td>
-<td></td>
-<td></td>
-<td>マウントポイントとなるディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/opt</td>
-<td></td>
-<td></td>
-<td>ソフトウェアパッケージのインストール先となるディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/proc</td>
-<td></td>
-<td></td>
-<td>プロセスを操作したり、システム情報を処理するための手段を提供している擬似ファイルシステムとなるディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/root</td>
-<td></td>
-<td></td>
-<td>rootユーザのホームディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/sbin</td>
-<td></td>
-<td></td>
-<td>システム管理者用のコマンドが配置されるディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/tmp</td>
-<td></td>
-<td></td>
-<td>一時データが配置されるディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/usr</td>
-<td></td>
-<td></td>
-<td>ユーザで共有するデータを保持するディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/usr</td>
-<td>/bin</td>
-<td>一般ユーザの利用するコマンドが格納されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/usr</td>
-<td>/include</td>
-<td>Cプログラムにincludeされるヘッダファイルが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/usr</td>
-<td>/lib</td>
-<td>共有ライブラリが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/usr</td>
-<td>/local</td>
-<td>ローカル用ファイルのトップディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/usr</td>
-<td>/sbin</td>
-<td>システム管理者が利用する必須ではないコマンドが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/usr</td>
-<td>/share</td>
-<td>アーキテクチャに依存しないデータファイルが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td>/var</td>
-<td></td>
-<td></td>
-<td>ログやキャッシュなどの頻繁に書き換えられるデータが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/var</td>
-<td>/cache</td>
-<td>キャッシュファイルが配置されているディレクトリ</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td>/var</td>
-<td>/log</td>
-<td>ログファイルが配置されているディレクトリ</td>
-</tr>
-</tbody>
-</table>
-<h4 id="etcfstab">/etc/fstab</h4>
-<p>マウントするファイルシステムの情報を記述するファイルです。OSを起動する際には、システムがデバイスをディレクトリにマウントしますが、その際、どのデバイスにどのディレクトリをマウントするか、の処理は、「/etc/fstab」ファイルの記述に従って進行します。</p>
-<h4 id="fstab">fstabの記法</h4>
-<table>
-<thead>
-<tr>
-<th>フィールド</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>第1フィールド</td>
-<td>デバイス名</td>
-</tr>
-<tr>
-<td>第2フィールド</td>
-<td>マウントポイント</td>
-</tr>
-<tr>
-<td>第3フィールド</td>
-<td>ファイルシステムの種類</td>
-</tr>
-<tr>
-<td>第4フィールド</td>
-<td>各種オプション</td>
-</tr>
-<tr>
-<td>第5フィールド</td>
-<td>ファイルシステムをdumpするか否かの指定</td>
-</tr>
-<tr>
-<td>第6フィールド</td>
-<td>OS起動時にfsckチェックを行うか否かの指定を行う</td>
-</tr>
-</tbody>
-</table>
-<h4 id="uuid">UUID</h4>
-<p>UUID(Universally Unique Identifier)とはソフトウェア上でオブジェクトを識別するための128ビットの一意な文字列を指します。</p>
-<p>UUIDを指定してetc/fstab にファイルシステムを追加するとリブートしたときなどにファイルシステムの読み取り順番が変わらなくなります。</p>
-<pre><code>ls -l /dev/disk/by-uuid/  # マウントしたいファイルシステムのUUIDを調べる
-blkid  # マウントしたいファイルシステムのUUIDを調べる
-cat /etc/fstab
-# UUIDを含めて書く
-UUID=xxxxxxxxxxxxxxx-xxxxxxxx-xxxxxxx       /data    ext4   defaults        0 0
-sudo mount -t ext4 UUID=&quot;...&quot; /mnt  # コマンドでマウント
-</code></pre>
-<h4 id="_1">ラベル</h4>
-<p>ラベルとはetc/fstabに書かれている「LABEL=」のことを指します。</p>
-<p>etc/fstabにはファイルシステムのマウントについて書かれており、Red Hat Linux 7.1以降ではマウントするファイルシステムにラベルを付ける必要があります。</p>
-<pre><code>mkdir /disk2  # マウントポイント作成
-e2label /dev/hda3 /disk2  # ラベルを付ける
-cat /etc/fstab
-LABEL=/disk2　　　/disk2　　ext2　defaults　　1 2  # /etc/fstabに追加
-</code></pre>
-<h4 id="media">/media</h4>
-<h4 id="tmpfs">tmpfs</h4>
-<p>メモリを使用する高速なファイルシステム。</p>
+<h2 id="_1">ブート</h2>
+<p>PCの電源を入れてからシステムが起動する事をブートと言う。</p>
+<h3 id="_2">ブートからシステム起動の流れ</h3>
+<ul>
+<li>電源ON</li>
+<li>BIOS/UEFI起動(POST実行)</li>
+<li>ブートローダ起動</li>
+<li>カーネル起動</li>
+<li>intramfs起動</li>
+<li>systemd起動</li>
+<li>システム起動完了</li>
+</ul>
 
 
 
