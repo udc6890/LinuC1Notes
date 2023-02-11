@@ -269,23 +269,23 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mbrgpt" class="md-nav__link">
-    MBRとGPT
+  <a href="#_2" class="md-nav__link">
+    パーティション管理の仕組み
   </a>
   
-    <nav class="md-nav" aria-label="MBRとGPT">
+    <nav class="md-nav" aria-label="パーティション管理の仕組み">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mrb" class="md-nav__link">
-    MRBパーティション
+  <a href="#mbr" class="md-nav__link">
+    MBR
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#gpt" class="md-nav__link">
-    GPTパーティション
+    GPT
   </a>
   
 </li>
@@ -296,9 +296,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mbr" class="md-nav__link">
-    MBR環境でのパーティション
+  <a href="#_3" class="md-nav__link">
+    パーティションの種類
   </a>
+  
+    <nav class="md-nav" aria-label="パーティションの種類">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    基本パーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    拡張パーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    論理パーティション
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -318,7 +345,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     スワップパーティション
   </a>
   
@@ -484,23 +511,23 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mbrgpt" class="md-nav__link">
-    MBRとGPT
+  <a href="#_2" class="md-nav__link">
+    パーティション管理の仕組み
   </a>
   
-    <nav class="md-nav" aria-label="MBRとGPT">
+    <nav class="md-nav" aria-label="パーティション管理の仕組み">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mrb" class="md-nav__link">
-    MRBパーティション
+  <a href="#mbr" class="md-nav__link">
+    MBR
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#gpt" class="md-nav__link">
-    GPTパーティション
+    GPT
   </a>
   
 </li>
@@ -511,9 +538,36 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#mbr" class="md-nav__link">
-    MBR環境でのパーティション
+  <a href="#_3" class="md-nav__link">
+    パーティションの種類
   </a>
+  
+    <nav class="md-nav" aria-label="パーティションの種類">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    基本パーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    拡張パーティション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    論理パーティション
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -533,7 +587,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     スワップパーティション
   </a>
   
@@ -608,23 +662,36 @@
 <li>例えばシステム領域とデータ領域を分離して利用し、システム領域で障害があった場合にそのパーティションだけ復旧するという運用ができる。</li>
 <li>データ領域が逼迫した際に比較的容易に拡張ができる。</li>
 </ul>
-<h3 id="mbrgpt">MBRとGPT</h3>
+<h3 id="_2">パーティション管理の仕組み</h3>
 <p><strong>MBR:MasterBootRecord</strong>と<strong>GPT:GUID Partition Table</strong>というパーティション管理の仕組みがある。</p>
-<h4 id="mrb">MRBパーティション</h4>
-<p>ブートローダは起動デバイスの先頭にあるMBR領域に格納されている。</p>
-<h4 id="gpt">GPTパーティション</h4>
-<p>ブートローダは起動デバイスのESP(EFI System Partition)に格納されている。ESPは/boot/efiにマウントされている。</p>
-<h3 id="mbr">MBR環境でのパーティション</h3>
-<p>MBR環境では以下のパーティションに分けて使用する</p>
+<h4 id="mbr">MBR</h4>
 <ul>
-<li>基本パーティション</li>
-<li>拡張パーティション</li>
-<li>論理パーティション</li>
+<li>BIOS環境で標準なパーティションスキーム。</li>
+<li>ブートローダが起動デバイスの先頭にあるMBR領域に格納されており、ここにパーティション情報もここに記載される。</li>
+<li>最大4つの基本パーティション。</li>
+<li>拡張パーティションと論理パーティションを使用して最大15のパーティションが作成できる。</li>
+<li>認識可能なディスクの最大は2TiB。</li>
 </ul>
+<h4 id="gpt">GPT</h4>
+<ul>
+<li>UEFI環境で標準なパーティションスキーム。</li>
+<li>ブートローダが起動デバイスのESP(EFI System Partition)パーティションに格納されており、パーティション情報もここに記載される。</li>
+<li>最大128の基本パーティション。</li>
+<li>認識可能なディスクの最大は8ZiB。</li>
+<li>ESPは/boot/efiにマウントされている。</li>
+</ul>
+<h3 id="_3">パーティションの種類</h3>
+<p>パーティションには次のような種類がある。</p>
+<h4 id="_4">基本パーティション</h4>
+<p>基本となるパーティション単位。</p>
+<h4 id="_5">拡張パーティション</h4>
+<p>基本パーティションを拡張したパーティション。論理パーティションはここに拡張されている。</p>
+<h4 id="_6">論理パーティション</h4>
+<p>論理的に作成されるパーティション。</p>
 <h3 id="efi">EFIシステムパーティション</h3>
 <h3 id="biosuefi">BIOSとUEFI</h3>
 <p>BIOSはMBRとGPTの両方のパーティション規格に対応しているが、UEFIはGPTのみを扱う。</p>
-<h4 id="_2">スワップパーティション</h4>
+<h4 id="_7">スワップパーティション</h4>
 <p>メモリが不足すると、メモリの一部をスワップ領域に退避することでシステムダウンを不正で処理を継続する。</p>
 <p>ルートパーティションとスワップパーティションの2つがあればシステムは動作する。
 /boot
@@ -632,8 +699,6 @@
 /var
 /tmp
 を個別のパーティションに分割することが一般的。</p>
-<p>BIOSはMBRとGPTの両方ｎ対応
-UEFIはGPTのみを扱う</p>
 <h3 id="lvmlogical-volume-manager">LVM:Logical Volume Manager(論理ボリュームマネージャ)</h3>
 <p>複数のディスクやパーティションにまたがった論理的なパーティションである、論理ボリュームを構成できる仕組み。拡張や縮小が容易に可能。</p>
 <h4 id="pvphysical-volume">PV:Physical Volume(物理ボリューム)</h4>
