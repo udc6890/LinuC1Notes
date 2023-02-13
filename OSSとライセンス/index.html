@@ -9,17 +9,15 @@
       
       
       
-        <link rel="prev" href="../%E3%83%87%E3%83%90%E3%82%A4%E3%82%B9/">
+        <link rel="prev" href="../%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%81%A8%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97/">
       
-      
-        <link rel="next" href="../%E3%83%91%E3%83%83%E3%82%B1%E3%83%BC%E3%82%B8%E7%AE%A1%E7%90%86/">
       
       <link rel="icon" href="../favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>パーティション - LinuC Lv1 Notes</title>
+        <title>OSSとライセンス(wip) - LinuC Lv1 Notes</title>
       
     
     
@@ -67,7 +65,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
+        <a href="#osswip" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -99,7 +97,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              パーティション
+              OSSとライセンス(wip)
             
           </span>
         </div>
@@ -257,176 +255,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          パーティション
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E3%83%91%E3%83%BC%E3%83%86%E3%82%A3%E3%82%B7%E3%83%A7%E3%83%B3/" class="md-nav__link">
         パーティション
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    パーティション
-  </a>
-  
-    <nav class="md-nav" aria-label="パーティション">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    パーティション管理の仕組み
-  </a>
-  
-    <nav class="md-nav" aria-label="パーティション管理の仕組み">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mbr" class="md-nav__link">
-    MBR
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gpt" class="md-nav__link">
-    GPT
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    パーティションの種類
-  </a>
-  
-    <nav class="md-nav" aria-label="パーティションの種類">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    基本パーティション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    拡張パーティション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    論理パーティション
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#efi" class="md-nav__link">
-    EFIシステムパーティション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#biosuefi" class="md-nav__link">
-    BIOSとUEFI
-  </a>
-  
-    <nav class="md-nav" aria-label="BIOSとUEFI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    スワップパーティション
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lvmlogical-volume-manager" class="md-nav__link">
-    LVM:Logical Volume Manager(論理ボリュームマネージャ)
-  </a>
-  
-    <nav class="md-nav" aria-label="LVM:Logical Volume Manager(論理ボリュームマネージャ)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pvphysical-volume" class="md-nav__link">
-    PV:Physical Volume(物理ボリューム)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vgvolume-group" class="md-nav__link">
-    VG:Volume Group(ボリュームグループ)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lvlogical-volume" class="md-nav__link">
-    LV:Logical Volume(論理ボリューム)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -497,11 +330,86 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../OSS%E3%81%A8%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          OSSとライセンス(wip)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         OSSとライセンス(wip)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    オープンソース
+  </a>
+  
+    <nav class="md-nav" aria-label="オープンソース">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    オープンソースソフトウェア
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    ライセンス
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oss" class="md-nav__link">
+    OSSライセンス
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    オープンソースライセンス
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -523,6 +431,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -532,30 +442,15 @@
       
         <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
-    パーティション
+    オープンソース
   </a>
   
-    <nav class="md-nav" aria-label="パーティション">
+    <nav class="md-nav" aria-label="オープンソース">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
-    パーティション管理の仕組み
-  </a>
-  
-    <nav class="md-nav" aria-label="パーティション管理の仕組み">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#mbr" class="md-nav__link">
-    MBR
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#gpt" class="md-nav__link">
-    GPT
+    オープンソースソフトウェア
   </a>
   
 </li>
@@ -564,104 +459,25 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
+      
+        <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
-    パーティションの種類
+    ライセンス
   </a>
   
-    <nav class="md-nav" aria-label="パーティションの種類">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#oss" class="md-nav__link">
+    OSSライセンス
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
-    基本パーティション
+    オープンソースライセンス
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    拡張パーティション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    論理パーティション
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#efi" class="md-nav__link">
-    EFIシステムパーティション
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#biosuefi" class="md-nav__link">
-    BIOSとUEFI
-  </a>
-  
-    <nav class="md-nav" aria-label="BIOSとUEFI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    スワップパーティション
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lvmlogical-volume-manager" class="md-nav__link">
-    LVM:Logical Volume Manager(論理ボリュームマネージャ)
-  </a>
-  
-    <nav class="md-nav" aria-label="LVM:Logical Volume Manager(論理ボリュームマネージャ)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#pvphysical-volume" class="md-nav__link">
-    PV:Physical Volume(物理ボリューム)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vgvolume-group" class="md-nav__link">
-    VG:Volume Group(ボリュームグループ)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#lvlogical-volume" class="md-nav__link">
-    LV:Logical Volume(論理ボリューム)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -681,61 +497,36 @@
 
 
 
-  <h1>パーティション</h1>
-
-<h2 id="_1">パーティション</h2>
-<ul>
-<li>Linuxで使用されるストレージディスクは通常、1つのディスクをいくつかに区切って使用する。この区切りの1つ1つをパーティションと言う。</li>
-<li>区切る事で、障害時の被害の波及範囲を限定する事ができる。</li>
-<li>例えばシステム領域とデータ領域を分離して利用し、システム領域で障害があった場合にそのパーティションだけ復旧するという運用ができる。</li>
-<li>データ領域が逼迫した際に比較的容易に拡張ができる。</li>
-</ul>
-<h3 id="_2">パーティション管理の仕組み</h3>
-<p><strong>MBR:MasterBootRecord</strong>と<strong>GPT:GUID Partition Table</strong>というパーティション管理の仕組みがある。</p>
-<h4 id="mbr">MBR</h4>
-<ul>
-<li>BIOS環境で標準なパーティションスキーム。</li>
-<li>ブートローダが起動デバイスの先頭にあるMBR領域に格納されており、ここにパーティション情報もここに記載される。</li>
-<li>最大4つの基本パーティション。</li>
-<li>拡張パーティションと論理パーティションを使用して最大15のパーティションが作成できる。</li>
-<li>認識可能なディスクの最大は2TiB。</li>
-</ul>
-<h4 id="gpt">GPT</h4>
-<ul>
-<li>UEFI環境で標準なパーティションスキーム。</li>
-<li>ブートローダが起動デバイスのESP(EFI System Partition)パーティションに格納されており、パーティション情報もここに記載される。</li>
-<li>最大128の基本パーティション。</li>
-<li>認識可能なディスクの最大は8ZiB。</li>
-<li>ESPは/boot/efiにマウントされている。</li>
-</ul>
-<h3 id="_3">パーティションの種類</h3>
-<p>パーティションには次のような種類がある。</p>
-<h4 id="_4">基本パーティション</h4>
-<p>基本となるパーティション単位。</p>
-<h4 id="_5">拡張パーティション</h4>
-<p>基本パーティションを拡張したパーティション。論理パーティションはここに拡張されている。</p>
-<h4 id="_6">論理パーティション</h4>
-<p>論理的に作成されるパーティション。</p>
-<h3 id="efi">EFIシステムパーティション</h3>
-<h3 id="biosuefi">BIOSとUEFI</h3>
-<p>BIOSはMBRとGPTの両方のパーティション規格に対応しているが、UEFIはGPTのみを扱う。</p>
-<h4 id="_7">スワップパーティション</h4>
-<p>メモリが不足すると、メモリの一部をスワップ領域に退避することでシステムダウンを不正で処理を継続する。</p>
-<p>ルートパーティションとスワップパーティションの2つがあればシステムは動作する。
-/boot
-/hom
-/var
-/tmp
-を個別のパーティションに分割することが一般的。</p>
-<h3 id="lvmlogical-volume-manager">LVM:Logical Volume Manager(論理ボリュームマネージャ)</h3>
-<p>複数のディスクやパーティションにまたがった論理的なパーティションである、論理ボリュームを構成できる仕組み。拡張や縮小が容易に可能。</p>
-<h4 id="pvphysical-volume">PV:Physical Volume(物理ボリューム)</h4>
-<p>ディスクやパーティションをLVMで扱えるようにしたものを物理ボリュームという。</p>
-<h4 id="vgvolume-group">VG:Volume Group(ボリュームグループ)</h4>
-<p>物理ボリュームを束ねて塊都市、ボリュームグループを構成する。</p>
-<h4 id="lvlogical-volume">LV:Logical Volume(論理ボリューム)</h4>
-<p>VGから必要なサイズを切り出して論理的なパーティションを作成する。こうしてできたものを論理ボリュームという。
-ブートローダはLVを認識しないため、/boot(カーネルが入ってるやつ)は物理パーティション上に構成する。</p>
+<h1 id="osswip">OSSとライセンス(wip)</h1>
+<h3 id="_1">オープンソース</h3>
+<p>無償で公開されたプログラムなどのソースコードまたは、そのような文化の事をオープンソースと言う。</p>
+<h4 id="_2">オープンソースソフトウェア</h4>
+<p>オープンソースになっているソフトウェアをオープンソースソフトウェア(<strong>OSS</strong>)と言う。</p>
+<h3 id="_3">ライセンス</h3>
+<p>オープンソースは無償で公開は行っているが、ソースコードには著作権があるため、それを元に好き勝手して良いわけではない。</p>
+<h3 id="oss">OSSライセンス</h3>
+<p>OSSライセンスは、ソフトウェアの再配布や利用許諾に関して条件を記載している。</p>
+<h3 id="_4">オープンソースライセンス</h3>
+<p>オープンソースを推進しているOSIは、オープンソースについて以下の10項目の定義を定めている。</p>
+<ol>
+<li>ソフトウェアを自由に販売したり無償で配布したりできること</li>
+<li>ソースコードが入手できること</li>
+<li>ソフトウェアに手を加えたり派生ソフトウェアを作ることができること</li>
+<li>作者のソースコードの完全性を維持すること</li>
+<li>個人やグループを差別しないこと</li>
+<li>利用分野について差別しないこと</li>
+<li>再配布するときに追加的なライセンスを必要としないこと</li>
+<li>ライセンスは特定の製品に依存しないこと</li>
+<li>同梱される他のソフトウェアを制限しないこと</li>
+<li>技術的に中立であること</li>
+</ol>
+<p>GPL
+LGPL
+AGPL
+BSD
+MIT
+Apache
+MPL</p>
 
 
 

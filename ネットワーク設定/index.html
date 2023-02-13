@@ -9,17 +9,13 @@
       
       
       
-        <link rel="prev" href="../%E3%83%96%E3%83%BC%E3%83%88%E3%81%A8systemd/">
-      
-      
-        <link rel="next" href="../%E3%82%B8%E3%83%A7%E3%83%96/">
       
       <link rel="icon" href="../favicon.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.12">
     
     
       
-        <title>プロセス - LinuC Lv1 Notes</title>
+        <title>ネットワーク設定(wip) - LinuC Lv1 Notes</title>
       
     
     
@@ -99,7 +95,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              プロセス
+              ネットワーク設定(wip)
             
           </span>
         </div>
@@ -212,95 +208,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          プロセス
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../%E3%83%97%E3%83%AD%E3%82%BB%E3%82%B9/" class="md-nav__link">
         プロセス
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目次">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wip" class="md-nav__link">
-    プロセス(wip)
-  </a>
-  
-    <nav class="md-nav" aria-label="プロセス(wip)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    親プロセスと子プロセス
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pid" class="md-nav__link">
-    PID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kill" class="md-nav__link">
-    killコマンドとシグナル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    主要なシグナル
-  </a>
-  
-    <nav class="md-nav" aria-label="主要なシグナル">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    プロセス管理コマンド
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -442,68 +354,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目次
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wip" class="md-nav__link">
-    プロセス(wip)
-  </a>
-  
-    <nav class="md-nav" aria-label="プロセス(wip)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    親プロセスと子プロセス
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#pid" class="md-nav__link">
-    PID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#kill" class="md-nav__link">
-    killコマンドとシグナル
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    主要なシグナル
-  </a>
-  
-    <nav class="md-nav" aria-label="主要なシグナル">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    プロセス管理コマンド
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -519,70 +371,7 @@
 
 
 
-  <h1>プロセス</h1>
-
-<h2 id="wip">プロセス(wip)</h2>
-<p>プロセスとは、プログラムの実行中のインスタンスの事。
-プロセスは一瞬で結果を出して終了するものと、長時間動作を続けるものがある。</p>
-<h4 id="_1">親プロセスと子プロセス</h4>
-<p>プロセスには、実行中にさらに別のプロセスを起動して動作するものがある。その元のプロセスを親プロセス、起動したものを子プロセスと言う。</p>
-<h4 id="pid">PID</h4>
-<p>プロセスにはPIDというIDがある。</p>
-<h4 id="kill">killコマンドとシグナル</h4>
-<p>プロセスを終了する際は、<code>kill</code>コマンドを実行する。その際に、プロセスへシグナルを送信する。このシグナルには種類があり、シグナルの種類によってプロセスをどのように終了するのかを指定して動作させる事ができる。</p>
-<h4 id="_2">主要なシグナル</h4>
-<table>
-<thead>
-<tr>
-<th>シグナル名</th>
-<th>シグナルID</th>
-<th>動作</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>HUP</td>
-<td>1</td>
-<td>ハングアップ（端末が制御不能もしくは切断による終了）</td>
-</tr>
-<tr>
-<td>INT</td>
-<td>2</td>
-<td>キーボードからの割り込み（Ctrl＋Cキー）</td>
-</tr>
-<tr>
-<td>KILL</td>
-<td>9</td>
-<td>強制終了</td>
-</tr>
-<tr>
-<td>TERM</td>
-<td>15</td>
-<td>終了（デフォルト）</td>
-</tr>
-<tr>
-<td>CONT</td>
-<td>18</td>
-<td>停止しているプロセスを再開</td>
-</tr>
-<tr>
-<td>STOP</td>
-<td>19</td>
-<td>一時停止</td>
-</tr>
-</tbody>
-</table>
-<ul>
-<li>fork</li>
-<li>exec</li>
-</ul>
-<h5 id="_3">プロセス管理コマンド</h5>
-<ul>
-<li>top</li>
-<li>pstree</li>
-<li>ps</li>
-<li>kill</li>
-</ul>
+<h1 id="wip">ネットワーク設定(wip)</h1>
 
 
 
