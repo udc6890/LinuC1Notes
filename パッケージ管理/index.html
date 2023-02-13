@@ -614,9 +614,11 @@
 <h3 id="_1">依存と競合</h3>
 <p>ソフトウェアによっては必要なライブラリなどに依存関係や競合関係がある。</p>
 <h3 id="rpmdev">RPMとDEV</h3>
-<p>Linuxのパッケージ管理システムは、RedHat系ディストリビューションで採用されているRPM:Redhat Package Manager形式のものと、Debian系ディストリビューションで採用されているDebian形式のものがある。</p>
-<p>RPM形式のものは、<code>rpm</code>、<code>yum</code>コマンドを用いる。
-Deb形式のものは<code>dpkg</code>、<code>apt</code>コマンドを用いる。</p>
+<ul>
+<li>Linuxのパッケージ管理システムは、RedHat系ディストリビューションで採用されているRPM:Redhat Package Manager形式のものと、Debian系ディストリビューションで採用されているDebian形式のものがある。</li>
+<li>RPM形式のものは、<code>rpm</code>、<code>yum</code>コマンドを用いる。</li>
+<li>Deb形式のものは<code>dpkg</code>、<code>apt</code>コマンドを用いる。</li>
+</ul>
 <h4 id="rpm">rpmコマンド</h4>
 <p>RPMコマンドは<code>rpm コマンドオプション [その他オプション] [パッケージ名など]</code>のように使う。</p>
 <h4 id="rpm_1">rpmコマンドでの主要なオプション</h4>
@@ -625,7 +627,7 @@ Deb形式のものは<code>dpkg</code>、<code>apt</code>コマンドを用い�
 <thead>
 <tr>
 <th>コマンドオプション</th>
-<th></th>
+<th>内容</th>
 </tr>
 </thead>
 <tbody>
@@ -656,7 +658,7 @@ Deb形式のものは<code>dpkg</code>、<code>apt</code>コマンドを用い�
 <thead>
 <tr>
 <th>-q,-vで併用する主要なオプション</th>
-<th></th>
+<th>内容</th>
 </tr>
 </thead>
 <tbody>
@@ -679,14 +681,16 @@ Deb形式のものは<code>dpkg</code>、<code>apt</code>コマンドを用い�
 </tbody>
 </table>
 <h4 id="yum">yumコマンド</h4>
-<p>RPMコマンドに依存関係のチェック機能がついたようなものがyum.
-yumコマンドは<code>yum [オプション] コマンド [パッケージ名など]</code>のように使う。</p>
+<ul>
+<li>RPMコマンドに依存関係のチェック機能がついたようなものがyum.</li>
+<li>yumコマンドは<code>yum [オプション] コマンド [パッケージ名など]</code>のように使う。</li>
+</ul>
 <h4 id="yum_1">yumコマンドでの主なコマンド</h4>
 <table>
 <thead>
 <tr>
-<th></th>
-<th></th>
+<th>コマンド</th>
+<th>内容</th>
 </tr>
 </thead>
 <tbody>
@@ -702,10 +706,16 @@ yumコマンドは<code>yum [オプション] コマンド [パッケージ名�
 <td>update</td>
 <td></td>
 </tr>
+<tr>
+<td>info</td>
+<td></td>
+</tr>
+<tr>
+<td>list</td>
+<td></td>
+</tr>
 </tbody>
 </table>
-<p>|info|
-|list|</p>
 <h4 id="dpkg">dpkgコマンド</h4>
 <p>dpkgコマンドは<code>dpkg アクション [オプション] パッケージ名</code>のように使う。</p>
 <p>オプション</p>
