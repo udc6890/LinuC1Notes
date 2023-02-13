@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#wip" class="md-skip">
+        <a href="#_1" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -304,15 +304,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wip" class="md-nav__link">
-    パッケージ管理(wip)
+  <a href="#_1" class="md-nav__link">
+    パッケージ管理
   </a>
   
-    <nav class="md-nav" aria-label="パッケージ管理(wip)">
+    <nav class="md-nav" aria-label="パッケージ管理">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     依存と競合
   </a>
   
@@ -327,8 +327,70 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#rpm" class="md-nav__link">
+    rpmコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpm_1" class="md-nav__link">
+    rpmコマンドでの主要なオプション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-q-v" class="md-nav__link">
+    -q,-vオプションで併用される主要なオプション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yum" class="md-nav__link">
+    yumコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yum_1" class="md-nav__link">
+    yumコマンドでの主なコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dpkg" class="md-nav__link">
+    dpkgコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apt" class="md-nav__link">
+    aptコマンド
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     リポジトリ
+  </a>
+  
+    <nav class="md-nav" aria-label="リポジトリ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epelextra-packages-for-enterprise-linux" class="md-nav__link">
+    EPEL:Extra Packages for Enterprise Linux
   </a>
   
 </li>
@@ -421,15 +483,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#wip" class="md-nav__link">
-    パッケージ管理(wip)
+  <a href="#_1" class="md-nav__link">
+    パッケージ管理
   </a>
   
-    <nav class="md-nav" aria-label="パッケージ管理(wip)">
+    <nav class="md-nav" aria-label="パッケージ管理">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     依存と競合
   </a>
   
@@ -444,8 +506,70 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#rpm" class="md-nav__link">
+    rpmコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rpm_1" class="md-nav__link">
+    rpmコマンドでの主要なオプション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-q-v" class="md-nav__link">
+    -q,-vオプションで併用される主要なオプション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yum" class="md-nav__link">
+    yumコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#yum_1" class="md-nav__link">
+    yumコマンドでの主なコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dpkg" class="md-nav__link">
+    dpkgコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#apt" class="md-nav__link">
+    aptコマンド
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     リポジトリ
+  </a>
+  
+    <nav class="md-nav" aria-label="リポジトリ">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#epelextra-packages-for-enterprise-linux" class="md-nav__link">
+    EPEL:Extra Packages for Enterprise Linux
   </a>
   
 </li>
@@ -478,21 +602,135 @@
 
   <h1>パッケージ管理</h1>
 
-<h2 id="wip">パッケージ管理(wip)</h2>
-<p>Linuxではソフトウェアのインストール・アンインストールなどをパッケージという単位で行う。
-パッケージには、</p>
+<h2 id="_1">パッケージ管理</h2>
+<p>Linuxではソフトウェアのインストール・アンインストールなどをパッケージという単位で行う。 パッケージには、</p>
 <ul>
 <li>実行ファイル</li>
 <li>ライブラリ</li>
 <li>設定ファイル</li>
-<li>ドキュメント</li>
+<li>ドキュメント
+などのデータが入っている。</li>
 </ul>
-<p>などのデータが入っている。</p>
-<h3 id="_1">依存と競合</h3>
+<h3 id="_2">依存と競合</h3>
 <p>ソフトウェアによっては必要なライブラリなどに依存関係や競合関係がある。</p>
 <h3 id="rpmdev">RPMとDEV</h3>
-<p>Linuxのパッケージ管理システムはRedHat系ディストリビューションで採用されている、RPM形式のものと、Debian系ディストリビューションで採用されている、Debian形式のものがある。</p>
-<h4 id="_2">リポジトリ</h4>
+<p>Linuxのパッケージ管理システムは、RedHat系ディストリビューションで採用されているRPM:Redhat Package Manager形式のものと、Debian系ディストリビューションで採用されているDebian形式のものがある。</p>
+<p>RPM形式のものは、<code>rpm</code>、<code>yum</code>コマンドを用いる。
+Deb形式のものは<code>dpkg</code>、<code>apt</code>コマンドを用いる。</p>
+<h4 id="rpm">rpmコマンド</h4>
+<p>RPMコマンドは<code>rpm コマンドオプション [その他オプション] [パッケージ名など]</code>のように使う。</p>
+<h4 id="rpm_1">rpmコマンドでの主要なオプション</h4>
+<p>まずはこれが基本</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-q</td>
+<td>情報を参照する(query)</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>インストール(install)</td>
+</tr>
+<tr>
+<td>-U</td>
+<td>アップデート(Update)</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>削除(erase)</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>検査(verify)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="-q-v">-q,-vオプションで併用される主要なオプション</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-i</td>
+<td>パッケージ情報を表示する(info)</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>パッケージに含まれるファイルを表示する(list)</td>
+</tr>
+<tr>
+<td>-a</td>
+<td>すべてのパッケージを一覧表示する(all)</td>
+</tr>
+<tr>
+<td>-R</td>
+<td>依存ファイルを表示する(requires)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="yum">yumコマンド</h4>
+<p>RPMコマンドに依存関係のチェック機能がついたようなものがyum.
+yumコマンドは<code>yum [オプション] コマンド [パッケージ名など]</code>のように使う。</p>
+<h4 id="yum_1">yumコマンドでの主なコマンド</h4>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>install</td>
+<td></td>
+</tr>
+<tr>
+<td>erase</td>
+<td></td>
+</tr>
+<tr>
+<td>update</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>|info|
+|list|</p>
+<h4 id="dpkg">dpkgコマンド</h4>
+<p>dpkgコマンドは<code>dpkg アクション [オプション] パッケージ名</code>のように使う。</p>
+<p>オプション</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-i</td>
+<td>インストール</td>
+</tr>
+<tr>
+<td>-r</td>
+<td>削除</td>
+</tr>
+</tbody>
+</table>
+<h4 id="apt">aptコマンド</h4>
+<h3 id="_3">リポジトリ</h3>
+<p>パッケージをまとめて保管している場所。例えば<a href="https://repo.almalinux.org/almalinux/9.0/BaseOS/x86_64/os/Packages/">ここ</a>など。</p>
+<h4 id="epelextra-packages-for-enterprise-linux">EPEL:Extra Packages for Enterprise Linux</h4>
 
 
 
