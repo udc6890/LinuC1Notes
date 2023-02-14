@@ -303,12 +303,18 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     デバイスファイル
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="デバイスファイル">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#d-bus" class="md-nav__link">
@@ -408,6 +414,47 @@
   <a href="#_10" class="md-nav__link">
     マウントポイント
   </a>
+  
+    <nav class="md-nav" aria-label="マウントポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moun" class="md-nav__link">
+    mounコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mount" class="md-nav__link">
+    mountコマンドの主なオプション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mount_1" class="md-nav__link">
+    mountコマンドの主な使用法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umount" class="md-nav__link">
+    umountコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umount_1" class="md-nav__link">
+    umountコマンドの主な使用法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -590,12 +637,18 @@
   
 </li>
         
+      </ul>
+    </nav>
+  
+</li>
+        
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     デバイスファイル
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="デバイスファイル">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#d-bus" class="md-nav__link">
@@ -696,6 +749,47 @@
     マウントポイント
   </a>
   
+    <nav class="md-nav" aria-label="マウントポイント">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moun" class="md-nav__link">
+    mounコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mount" class="md-nav__link">
+    mountコマンドの主なオプション
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mount_1" class="md-nav__link">
+    mountコマンドの主な使用法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umount" class="md-nav__link">
+    umountコマンド
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#umount_1" class="md-nav__link">
+    umountコマンドの主な使用法
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -744,7 +838,7 @@
 <li>ホットプラグデバイスはUSBなど。</li>
 <li>ホットプラグデバイスの制御はudev(Userspace DEVice management)によって行われます。</li>
 </ul>
-<h4 id="_5">デバイスファイル</h4>
+<h3 id="_5">デバイスファイル</h3>
 <ul>
 <li>Linuxでは接続されたデバイスをファイルの1つとして扱う。これをデバイスファイルという。</li>
 <li>デバイスファイルは「/dev」ディレクトリ配下に配置される。</li>
@@ -872,6 +966,51 @@ DMAチャネルは周辺機器がDMAのコントローラ（制御装置）に�
 <li>「あるポイント」の事をマウントポイントという。</li>
 <li>マウント前にマウントポイントというディレクトリを作成し、そこにマウントする。</li>
 </ul>
+<h4 id="moun">mounコマンド</h4>
+<p>マウントを行うときは<code>mount</code>コマンドを使う。</p>
+<h4 id="mount">mountコマンドの主なオプション</h4>
+<table>
+<thead>
+<tr>
+<th>オプション</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-a</td>
+<td>/etc/fstabを今すぐ有効化</td>
+</tr>
+<tr>
+<td>-l</td>
+<td>マウントしたデバイスをすべて表示</td>
+</tr>
+<tr>
+<td>-t 種類</td>
+<td>マウントするファイルシステムの種類を指定する</td>
+</tr>
+</tbody>
+</table>
+<h4 id="mount_1">mountコマンドの主な使用法</h4>
+<pre><code class="language-mount">・/etc/fstabにあるすべてのデバイスをマウントする
+# mount -a
+・マウント済みファイルシステムの一覧を表示する
+# mount -l
+・デバイスをマウントポイントにマウントする
+# mount デバイス マウントポイント
+・ファイルシステムの種類を指定してマウント
+# mount -t xfs /dev/sdc2 /usr/local
+</code></pre>
+<h4 id="umount">umountコマンド</h4>
+<p>マウントを解除する時は<code>umount</code>コマンドを使う。</p>
+<h4 id="umount_1">umountコマンドの主な使用法</h4>
+<pre><code class="language-umount">・デバイスをアンマウントする
+# umount デバイス名
+・マウントポイントを解除する
+# umount マウントポイント
+・指定した場所をアンマウントする
+# umount /usr/local
+</code></pre>
 <h3 id="etcfstab">/etc/fstab</h3>
 <p>OSを再起動するとマウントは外れてしまうが、fstabにマウント情報を記載しておくと、再起動時に自動で再マウントを行う。</p>
 <table>
@@ -911,7 +1050,7 @@ DMAチャネルは周辺機器がDMAのコントローラ（制御装置）に�
 <ul>
 <li>fstabに記載したがマウントされていない状態の場合は、<code>mount -a</code>でfstabの内容が反映される。</li>
 <li>マウントしたデバイスは通常root権限でマウントされるため、一般ユーザは嫁はするが書き込みができない。</li>
-<li>マウントオプションにユーザを指定すると一般ユーザもマウントできる。</li>
+<li>マウントオプションに<code>user</code>を指定すると一般ユーザもマウントできる。</li>
 </ul>
 
 
